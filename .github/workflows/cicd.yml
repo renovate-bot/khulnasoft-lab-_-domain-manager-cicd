@@ -24,7 +24,7 @@ jobs:
   build_ui:
     runs-on: ubuntu-latest
     env:
-      IMAGE_REPO: domain-manager
+      IMAGE_REPO: domain-manager-ui
     environment:
       name: develop
     outputs:
@@ -32,7 +32,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: khulnasoft-lab/domain-manager
+          repository: khulnasoft-lab/domain-manager-ui
       - name: Get Tag
         id: vars
         run: echo ::set-output name=tag::$(git rev-parse --short HEAD)
