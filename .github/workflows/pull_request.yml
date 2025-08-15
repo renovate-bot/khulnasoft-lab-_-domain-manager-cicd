@@ -22,7 +22,7 @@ jobs:
       - id: setup-python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9
+          python-version: 3.13
       # GO_VERSION and GOCACHE are used by the cache task, so the Go
       # installation must happen before that.
       - uses: actions/setup-go@v2

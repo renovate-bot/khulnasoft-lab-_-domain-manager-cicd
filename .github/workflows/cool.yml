@@ -201,7 +201,7 @@ jobs:
       # Install python 3.8 for installing lambda layer
       - uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.13
       - name: Upgrade Pip
         run: pip install --upgrade pip
 
